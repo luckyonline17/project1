@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dwellin Interiors</title>
+    <link rel="stylesheet" href="./contact.css">
+
+    <style>
+        
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+    <div class="banner">
+
+
+        <div class="navbar">
+            <img class="logo" src="./dwellin.jpg" alt="Image not loaded">
+    
+            <ul>
+    
+                <li> <a href="D:\Work\DWELLIN\DWELLIN.HTML">HOME</a> </li>
+                <li> <a href="#">SERVICES</a> </li>
+                <li> <a href="#">PROJECTS</a> </li>
+                <li> <a href="#">ABOUT</a> </li>
+                <li> <a href="D:\Work\DWELLIN\contact.html">   <p> CONTACT</p></a> </li>
+    
+            </ul>
+    
+        </div>
+    
+        <div class="content"></div> 
+    
+
+        <div class="Registration-form">
+            <h1 class="title">Book Consultation</h1>
+            <form action="https://formsubmit.co/lsn@designs.com" method="POST">
+                
+            <div class="All-Inputs">
+    
+            <div class="Inputs">
+        
+                <Input type="text" id="fn" name="name" placeholder="Name" ></Input>
+            </div>
+    
+            <div class="Inputs">       
+                <input type="email" id="eml" name="email" placeholder="Email">
+            </div>
+    
+            <div class="Inputs">
+                <input type="number" id="num" name="number" placeholder="Contact Number">
+            </div>
+    
+            <div class="Inputs">
+                <input type="password" id="pwd1" name="password" placeholder="Project Name / Location">
+            </div>
+    
+            <div class="Inputs">
+                <textarea name="Message" id="msg" cols="40" rows="3" placeholder="Message"></textarea>
+    
+            <div class="gender">
+                <label id="gendertitle">Gender</label>
+                <div class="gendercat">
+                <input type="radio" name="Gender"><label>Male</label>
+                <input type="radio" name="Gender"><label>Female</label>
+                <input type="radio" name="Gender"><label>Others</label>
+                </div>
+                
+            </div>
+            </div>
+    
+            <div class="button">
+                <input type="submit" value="Submit">
+               
+               
+            </div>
+    
+            </form>
+    
+
+
+
+        </div>
+
+        </div>
+
+        <div id="status" class="error">Thank You</div>
+
+
+
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "cplokesh80@gmail.com",
+            Password : "8088286640m",
+            To : "cplokesh79@gmail.com",
+            From : document.getElementById("gmail").value,
+            Subject : "New Contact Form Enquiry",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+    }
+</script>
+
+
+
+</body>
+</html>
